@@ -48,7 +48,20 @@ For your second milestone, explain what you've worked on since your previous mil
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
+- Raspberry pi 4
+      - Used raspberry pi imager to install the OS onto the sd card
+      - Connected the camera to it
+- SSH file: protocol allowing 2 computers to communicate
+        - Downloaded packages which allowed me to use the camera
+        - camera.py
+This script uses the Raspberry Pi camera to make an image and save it. It uses libraries to handle the capture and storage of the image.
+
+- OCR/ Optical Character Recognition
+      - Installed the tesseract library which would allow the program to extract text from images
+  
+  sudo apt install tesseract-ocr
+      - This script processes an image using various different techniques in order to detect and highlight readable text, then saves the results. It makes use of image processing and OCR tools to extract and display the text visually. This script makes the process extremely easy. 
+
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
