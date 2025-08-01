@@ -47,24 +47,17 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- Raspberry pi 4
-      - Used raspberry pi imager to install the OS onto the sd card
-      - Connected the camera to it
-- SSH file: protocol allowing 2 computers to communicate
-        - Downloaded packages which allowed me to use the camera
-        - camera.py
-This script uses the Raspberry Pi camera to make an image and save it. It uses libraries to handle the capture and storage of the image.
 
-- OCR/ Optical Character Recognition
-      - Installed the tesseract library which would allow the program to extract text from images
+-The 2 main componenets of my project are the raspberry pi 4 and the camera that connects onto it. Aditionally, I used Visual Studio to create a virtual environment with the specific packages needed for my project, made a script called camera.py that sets up the Pi camera and takes a photo which is saved to the device. Also made a script for the program to process the images which I named example.py
+
+- I learned why a virtual environemt was needed and how the terminal was used to connect to the raspberry pi without being physically connected. 
+
+- One problem I ran into was errors while downloading the required packages. Even after reinstalling the OS on the Raspberry Pi, I kept having the same issue which was that the system couldn't detect the camera as a connected device. Another issue I faced was Visual Studios not connecting to the raspberry pi. 
+
   
-  sudo apt install tesseract-ocr
-      - This script processes an image using various different techniques in order to detect and highlight readable text, then saves the results. It makes use of image processing and OCR tools to extract and display the text visually. This script makes the process extremely easy. 
-
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
+- I resolved the package errors by installing them outside the virtual environment, which stopped the recurring issues. I also fixed the connection problem between Visual Studio Code and the Raspberry Pi by making sure the Pi was connected to my Wi-Fi network.
+  
+-I plan to integrate speech-to-text functionality into the project as well as a translation component to support multilingual input and output.
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
@@ -72,18 +65,80 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
+example.py
 ```c++
-void setup() {
-  // put your setup code here, to run once:
-  Serial.begin(9600);
-  Serial.println("Hello World!");
-}
-
-void loop() {
-  // put your main code here, to run repeatedly:
-
-}
+import cv2
+import pytesseract
+import numpy as np
+from pytesseract import Output
+ 
+img_source = cv2.imread('coffee-ocr.jpg')
+ 
+ 
+def get_grayscale(image):
+    return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+ 
+ 
+def thresholding(image):
+    return cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+ 
+ 
+def opening(image):
+    kernel = np.ones((5, 5), np.uint8)
+    return cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
+ 
+ 
+def canny(image):
+    return cv2.Canny(image, 100, 200)
+ 
+ 
+gray = get_grayscale(img_source)
+thresh = thresholding(gray)
+opening = opening(gray)
+canny = canny(gray)
+ 
+i=0
+for img in [img_source, gray, thresh, opening, canny]:
+    d = pytesseract.image_to_data(img, output_type=Output.DICT)
+    n_boxes = len(d['text'])
+ 
+    # back to RGB
+    if len(img.shape) == 2:
+        img = cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
+ 
+    for i in range(n_boxes):
+        if int(d['conf'][i]) > 60:
+            (text, x, y, w, h) = (d['text'][i], d['left'][i], d['top'][i], d['width'][i], d['height'][i])
+            # don't show empty text
+            if text and text.strip() != "":
+                img = cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
+                img = cv2.putText(img, text, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 255, 0), 3)
+ 
+    cv2.imwrite(f'img{i}.jpg', img)
+    i+=1
+    cv2.waitKey(0)
 ```
+-This script processes an image using various different techniques in order to detect and highlight readable text, then saves the results. It makes use of image processing and OCR tools to extract and display the text visually. The script simplifies the entire text detection process.
+
+camera.py
+```c++
+from picamera2 import Picamera2
+import cv2
+
+# Initialize PiCam
+picam2 = Picamera2()
+picam2.configure(picam2.create_preview_configuration(main={"format": "RGB888", "size": (640, 480)}))
+picam2.start()
+
+# Capture one frame
+frame = picam2.capture_array()
+
+# Save the image to disk
+cv2.imwrite("image.jpg", frame)
+
+print("Image saved as image.jpg")
+```
+
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
