@@ -36,10 +36,12 @@ For your final milestone, explain the outcome of your project. Key details to in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- For my second milestone I started to work on my speech to text recognition to work. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. 
-- The only problem I had was that the packages th download vosk became corrupted but besdies that there were no major complications 
+- For my second milestone I started to work on my speech to text recognition to work. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. Additionally I integrated the OCR with the camera so it was able to recognize text from pictures taken by my camera
+
+
+- The only problem I had was that the packages th download vosk became corrupted but besides that there were no major complications 
 - 
-- For my final milestone I would like to implement translation to the STT and also have the STT implement it onto the camera
+- For my final milestone I would like to implement a button that can take a picture with my camera, an oled screen that displays text, and finally implementing text to speech translation for my OCR
 
 # First Milestone
 
@@ -157,8 +159,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Microphone | What the item is used for | 9.99 | <a href="https://www.amazon.com/DUNGZDUZ-Microphone-Computer-Sensitivity-Mini-Sized/dp/B0CNVZ27YH/ref=sr_1_7?crid=2E8AID5UQ1ZZZ&dib=eyJ2IjoiMSJ9.ALlacqVSJFYCMwk0BLBt4BE78M6dbL4aQxGWFHFGViY7QOzmOSfkxRzzMD4BytGFdvrXnYFwbFQpiWeLB37vgMOeTgeyNJDCEdkcPjHzzHRJxfNFVUN6RfiMHaRcFDG-9Bv_yfPh1GhToIG1whgMGesfk7lXYtf8SFgQiEq2amOZxI0tqGpX2VQclkxKSnqhF6yzTiCWcZ4eNLkG1Dd01JochzymYWm59TYI_ipygVEt9UpdCReF2L_Ap0gIyhTLupQRKLocdolLZufM8LKLonKajGSQwrgEu_3jmlV10mM.wRiTmzhi2KBZXCOWVMCU_b0r9fvSClHWCv29BKgVQ4o&dib_tag=se&keywords=usb+microphone&qid=1747574148&sprefix=usb+microphone+%2Caps%2C143&sr=8-7"> Link </a> |
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [VOSK MODELS](https://alphacephei.com/vosk/models)
+- [RASPBERRY PI IMAGER](https://www.raspberrypi.com/software)
+- [PIPER TTS-PYTHON API DOCUMENTATION](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md)
 
 To watch the BSE tutorial on how to create a portfolio, click here.
