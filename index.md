@@ -36,10 +36,10 @@ For your final milestone, explain the outcome of your project. Key details to in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- For my second milestone I started to work on my speech to text recognition to work. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. Additionally I integrated the OCR with the camera so it was able to recognize text from pictures taken by my camera
+- For my second milestone I started to work on my speech to text recognition to work. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. Lastly, I integrated the OCR with the camera so it was able to recognize text from pictures taken by my camera
 
 
-- The only problem I had was that the packages th download vosk became corrupted but besides that there were no major complications 
+- A problem I had was that the packages to download vosk became corrupted and the camera was not recognizing text in many images. I was able to fix the corrupted files and replace them. The problem I encountered for the camera wasn't as straight forward since I wasn't able to compeltely change the camera to take higher resolution pictures, I figured out that lighting affected the camera's ability to recognize text and started to use additional lighting while taking photos. 
 - 
 - For my final milestone I would like to implement a button that can take a picture with my camera, an oled screen that displays text, and finally implementing text to speech translation for my OCR
 
