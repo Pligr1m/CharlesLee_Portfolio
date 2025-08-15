@@ -358,7 +358,6 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Speaker | Output speech for TTS | 9.99 | [Link](https://www.amazon.com/Mobile-Speaker-Compact-Adhesive-Installation/dp/B0D95ZYCW6/ref=sr_1_21?crid=369CH18NKBSVU&keywords=speakerphone%2Bsmall%2Baudio%2Bjack&qid=1747574092&sprefix=speakerphone%2Bsmall%2Baudio%2Bjack%2B%2Caps%2C85&sr=8-21&th=1) |
 | Microphone | Input sound/words using camera for STT | 9.99 | [Link](https://www.amazon.com/DUNGZDUZ-Microphone-Computer-Sensitivity-Mini-Sized/dp/B0CNVZ27YH/ref=sr_1_7?crid=2E8AID5UQ1ZZZ&keywords=usb+microphone&qid=1747574148&sprefix=usb+microphone+%2Caps%2C143&sr=8-7) |
 | RPI Camera Flash Module | Upgrade from my previous camera | 23.99 | [Link](https://www.amazon.com/dp/B07X1VGQSL?psc=1&smid=A2IAB2RW3LLT8D&ref_=chk_typ_imgToDp) |
-
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [VOSK MODELS](https://alphacephei.com/vosk/models)
