@@ -2,30 +2,38 @@
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
+| ------------- |:-------------:| :-------------: |:-------------:|
+| Charles L.  | Roslyn High school| Civil/ Environmental engineering| Rising Junior |
 
-| Charles L. | Roslyn High school | Civil/ Environmental engineering | Rising Junior |
+
+
 
 
 ![Headstone Image](poop.jpeg)
-  
+ 
 # Final Milestone
 
 
 
 <iframe width="1013" height="570" src="https://www.youtube.com/embed/168AbMPATOo" title="Charles L. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-For your final milestone, explain the outcome of your project. Key details to include are:
-- For my final milestone I was able to implement a new camera for clearer images/ more consistent image recognition and a speaker for text to speech reconition
+
+- For my final milestone I was able to implement a new camera for clearer images/ more consistent image recognition and a speaker for text to speech reconition:
 
   I implemented text to speech by using pyttsx3 library which allows for text to be changed into speech from my ocr
-  
+ 
 
--My biggest challenge at BSE was learning how to code and apply software, which set me back from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra componenets such as STT (speech-to-text) and TTS (text-to-speech) features.
+## Challenges
+
+- My biggest challenge at BSE was learning how to code and apply software, which set me back from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra componenets such as STT (speech-to-text) and TTS (text-to-speech) features.
+
+## Learnings from Blue Stamp
 
 - My journey at BSE was filled with valuable learning experiences, especially with Python. I learned how to use Python to control different aspects of my project, from running code on the Raspberry Pi to integrating software features like speech-to-text and text-to-speech. Through trial and error, I developed a stronger understanding of Python’s syntax, libraries, and problem-solving applications, which gave me the confidence to build and expand my project’s functionality.
-  
+ 
+## What I plan to do after BSE
+
 - In the future after BSE, I hope to learn more about machine learning and its implementation in the real world and how it can help people. Looking forward, I am eager to deepen my understanding of machine learning by creating and training my own models. I want to explore how these models can be applied to solve problems that humans can't solve on their own and ultimately use them to make a positive difference in society. By learning more about the principles and applications of machine learning, I hope to develop tools and technologies that can help people and contribute to building a better future.
 
 CODE
@@ -39,11 +47,13 @@ UPDATED OCR
 
 - For my second milestone I started to work on my speech to text recognition. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. Lastly, I integrated the OCR with the camera so it was able to recognize text from pictures taken by my camera
 
-
+## Challenges
 - A problem I had was that the packages to download vosk became corrupted and the camera was not recognizing text in many images. I was able to fix the corrupted files and replace them. The problem I encountered for the camera wasn't as straight forward since I wasn't able to compeltely change the camera to take higher resolution pictures, I figured out that lighting affected the camera's ability to recognize text and started to use additional lighting while taking photos.
 
-- Something that surprised me was how many resources there are online for coding and engineering. Whenever I run into an error, I can usually find someone who had the same issue and solved it. I like how open and helpful the engineering community is. These resources have helped me grow a lot as an engineer, letting me solve problems on my own by researching and putting in the time, without always relying on my mentor or teacher to help. 
+## Surprises
+- Something that surprised me was how many resources there are online for coding and engineering. Whenever I run into an error, I can usually find someone who had the same issue and solved it. I like how open and helpful the engineering community is. These resources have helped me grow a lot as an engineer, letting me solve problems on my own by researching and putting in the time, without always relying on my mentor or teacher to help.
 
+## Milestone #3 Plans
 - For my final milestone I would like to implement a button that can take a picture with my camera, an oled screen that displays text, and finally implementing text to speech translation for my OCR
 
 CODE
@@ -121,7 +131,7 @@ async def main():
 
                 # Async translation for recognized text
                 if recognized_text is not None or not recognized_text.isspace():
-                    
+                   
                     await translate_and_respond(recognized_text)
 
             else:
@@ -245,27 +255,27 @@ This program turns on the Pi camera and captures an image for 10 seconds afterwa
 # First Milestone
 
 
-<iframe width="1013" height="570" 
-    src="https://www.youtube.com/embed/YlaM46ZHwUE" 
-    title="Charles L. Milestone 1" 
-    frameborder="0" 
+<iframe width="1013" height="570"
+    src="https://www.youtube.com/embed/YlaM46ZHwUE"
+    title="Charles L. Milestone 1"
+    frameborder="0"
     allowfullscreen>
 </iframe>
 
 
--The 2 main componenets of my project are the raspberry pi 4 and the camera that connects onto it. Aditionally, I used Visual Studio to create a virtual environment with the specific packages needed for my project, made a script called camera.py that sets up the Pi camera and takes a photo which is saved to the device. Also made a script for the program to process the images which I named example.py
+- The 2 main componenets of my project are the raspberry pi 4 and the camera that connects onto it. Aditionally, I used Visual Studio to create a virtual environment with the specific packages needed for my project, made a script called camera.py that sets up the Pi camera and takes a photo which is saved to the device. Also made a script for the program to process the images which I named example.py
 
-- I learned why a virtual environemt was needed and how the terminal was used to connect to the raspberry pi without being physically connected. 
+- I learned why a virtual environemt was needed and how the terminal was used to connect to the raspberry pi without being physically connected.
 
 - One challenge I faced was dealing with errors while installing the required packages. Even after reinstalling the Raspberry Pi OS, the system still failed to detect the camera as a connected device. I also ran into difficulties connecting Visual Studio to the Raspberry Pi. Since Python was relatively new to me, it slowed down my progress and set me back from my original plan for Milestone 1.
-  
+ 
 - I resolved the package errors by installing them outside the virtual environment, which stopped the recurring issues. I also fixed the connection problem between Visual Studio Code and the Raspberry Pi by making sure the Pi was connected to my local Wi-Fi network.
-  
+ 
 -I plan to integrate speech-to-text functionality into the project as well as a translation component to support multilingual input and output.
 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs.
 
 example.py
 ```c++
@@ -340,13 +350,13 @@ cv2.imwrite("image.jpg", frame)
 
 print("Image saved as image.jpg")
 ```
-# Schematics 
+# Schematics
 ![Headstone Image](IMG_0160.jpg)
 
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
+Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs.
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--|:--|:--:|:--:|
@@ -356,10 +366,8 @@ Don't forget to place the link of where to buy each component inside the quotati
 | Microphone | Input sound/words using camera for STT | 9.99 | [Link](https://www.amazon.com/DUNGZDUZ-Microphone-Computer-Sensitivity-Mini-Sized/dp/B0CNVZ27YH/ref=sr_1_7?crid=2E8AID5UQ1ZZZ&keywords=usb+microphone&qid=1747574148&sprefix=usb+microphone+%2Caps%2C143&sr=8-7) |
 | RPI Camera Flash Module | Upgrade from my previous camera | 23.99 | [Link](https://www.amazon.com/dp/B07X1VGQSL?psc=1&smid=A2IAB2RW3LLT8D&ref_=chk_typ_imgToDp) |
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
+
 - [VOSK MODELS](https://alphacephei.com/vosk/models)
 - [RASPBERRY PI IMAGER](https://www.raspberrypi.com/software)
 - [PIPER TTS-PYTHON API DOCUMENTATION](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md)
 - [pyttsx3 Documentation](https://pypi.org/project/pyttsx3)
-
-To watch the BSE tutorial on how to create a portfolio, click here.
