@@ -361,5 +361,6 @@ One of the best parts about Github is that you can view how other people set up 
 - [VOSK MODELS](https://alphacephei.com/vosk/models)
 - [RASPBERRY PI IMAGER](https://www.raspberrypi.com/software)
 - [PIPER TTS-PYTHON API DOCUMENTATION](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md)
-- [pyttsx3 Documentation]([https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_PYTHON.md](https://pypi.org/project/pyttsx3))
+- [pyttsx3 Documentation](https://pypi.org/project/pyttsx3)
+
 To watch the BSE tutorial on how to create a portfolio, click here.
