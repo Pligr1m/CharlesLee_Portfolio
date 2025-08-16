@@ -1,17 +1,12 @@
 # Optical Character Recognition
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
+
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 
 | Charles L. | Roslyn High school | Civil/ Environmental engineering | Rising Junior |
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](poop.jpeg)
   
@@ -27,9 +22,11 @@ For your final milestone, explain the outcome of your project. Key details to in
   I implemented text to speech by using pyttsx3 library which allows for text to be changed into speech from my ocr
   
 
+    -Challenges
+-My biggest challenge at BSE was learning how to code and apply software, which slowed my progress and kept me from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra STT (speech-to-text) and TTS (text-to-speech) features.
 
--My biggest challenge at BSE was learning how to code and apply the software, as it was an entirely new experience for me. This slowed me down a bit which prevented me from adding the oled or button onto my project but besides that, I finished the base of my project and additional STT and TTS
-- A summary of key topics you learned about
+    -Triumphs
+- My journey at BSE was filled with valuable learning experiences, especially with Python. I learned how to use Python to control different aspects of my project, from running code on the Raspberry Pi to integrating software features like speech-to-text and text-to-speech. Through trial and error, I developed a stronger understanding of Python’s syntax, libraries, and problem-solving applications, which gave me the confidence to build and expand my project’s functionality.
 - In the future after BSE, I hope to learn more about machine learning and its implementation in the real world and how it can help people. 
 
 
