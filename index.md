@@ -1,5 +1,5 @@
 # Optical Character Recognition
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+For my project, I built a system that combines OCR (Optical Character Recognition) with speech-to-text (STT) and text-to-speech (TTS) to read and interpret text from both images and live audio. One of the biggest challenges was optimizing the camera and preprocessing images to accurately capture and recognize as much text as possible. Completing the project taught me how to integrate multiple AI tools seamlessly, and it was incredibly rewarding to see the system both read text from a camera feed and speak it aloud in real time.
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
