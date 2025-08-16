@@ -257,8 +257,7 @@ This program turns on the Pi camera and captures an image for 10 seconds afterwa
 
 - I learned why a virtual environemt was needed and how the terminal was used to connect to the raspberry pi without being physically connected. 
 
-- One problem I ran into was errors while downloading the required packages. Even after reinstalling the OS on the Raspberry Pi, I kept having the same issue which was that the system couldn't detect the camera as a connected device. Another issue I faced was Visual Studios not connecting to the raspberry pi. Using python was also relatively new to me so It did set me back from what I originally wanted to do for my milestone 1. 
-
+- One challenge I faced was dealing with errors while installing the required packages. Even after reinstalling the Raspberry Pi OS, the system still failed to detect the camera as a connected device. I also ran into difficulties connecting Visual Studio to the Raspberry Pi. Since Python was relatively new to me, it slowed down my progress and set me back from my original plan for Milestone 1.
   
 - I resolved the package errors by installing them outside the virtual environment, which stopped the recurring issues. I also fixed the connection problem between Visual Studio Code and the Raspberry Pi by making sure the Pi was connected to my local Wi-Fi network.
   
