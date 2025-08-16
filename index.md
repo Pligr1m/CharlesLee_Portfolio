@@ -12,7 +12,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
 
 <iframe width="1013" height="570" src="https://www.youtube.com/embed/168AbMPATOo" title="Charles L. Milestone 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -22,13 +22,16 @@ For your final milestone, explain the outcome of your project. Key details to in
   I implemented text to speech by using pyttsx3 library which allows for text to be changed into speech from my ocr
   
 
-    -Challenges
--My biggest challenge at BSE was learning how to code and apply software, which slowed my progress and kept me from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra STT (speech-to-text) and TTS (text-to-speech) features.
+-My biggest challenge at BSE was learning how to code and apply software, which set me back from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra componenets such as STT (speech-to-text) and TTS (text-to-speech) features.
 
-    -Triumphs
 - My journey at BSE was filled with valuable learning experiences, especially with Python. I learned how to use Python to control different aspects of my project, from running code on the Raspberry Pi to integrating software features like speech-to-text and text-to-speech. Through trial and error, I developed a stronger understanding of Python’s syntax, libraries, and problem-solving applications, which gave me the confidence to build and expand my project’s functionality.
-- In the future after BSE, I hope to learn more about machine learning and its implementation in the real world and how it can help people. 
+  
+- In the future after BSE, I hope to learn more about machine learning and its implementation in the real world and how it can help people. Looking forward, I am eager to deepen my understanding of machine learning by creating and training my own models. I want to explore how these models can be applied to solve problems that humans can't solve on their own and ultimately use them to make a positive difference in society. By learning more about the principles and applications of machine learning, I hope to develop tools and technologies that can help people and contribute to building a better future.
 
+CODE
+MILESTONE 3
+
+UPDATED OCR
 
 
 # Second Milestone
@@ -241,7 +244,6 @@ This program turns on the Pi camera and captures an image for 10 seconds afterwa
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="1013" height="570" 
     src="https://www.youtube.com/embed/YlaM46ZHwUE" 
@@ -255,15 +257,13 @@ This program turns on the Pi camera and captures an image for 10 seconds afterwa
 
 - I learned why a virtual environemt was needed and how the terminal was used to connect to the raspberry pi without being physically connected. 
 
-- One problem I ran into was errors while downloading the required packages. Even after reinstalling the OS on the Raspberry Pi, I kept having the same issue which was that the system couldn't detect the camera as a connected device. Another issue I faced was Visual Studios not connecting to the raspberry pi. 
+- One problem I ran into was errors while downloading the required packages. Even after reinstalling the OS on the Raspberry Pi, I kept having the same issue which was that the system couldn't detect the camera as a connected device. Another issue I faced was Visual Studios not connecting to the raspberry pi. Using python was also relatively new to me so It did set me back from what I originally wanted to do for my milestone 1. 
 
   
-- I resolved the package errors by installing them outside the virtual environment, which stopped the recurring issues. I also fixed the connection problem between Visual Studio Code and the Raspberry Pi by making sure the Pi was connected to my Wi-Fi network.
+- I resolved the package errors by installing them outside the virtual environment, which stopped the recurring issues. I also fixed the connection problem between Visual Studio Code and the Raspberry Pi by making sure the Pi was connected to my local Wi-Fi network.
   
 -I plan to integrate speech-to-text functionality into the project as well as a translation component to support multilingual input and output.
 
-# Schematics 
-![Headstone Image](IMG_0160.jpg)
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
@@ -341,7 +341,8 @@ cv2.imwrite("image.jpg", frame)
 
 print("Image saved as image.jpg")
 ```
-
+# Schematics 
+![Headstone Image](IMG_0160.jpg)
 
 
 # Bill of Materials
