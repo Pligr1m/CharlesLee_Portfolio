@@ -24,15 +24,15 @@ Replace this text with a brief description (2-3 sentences) of your project. This
   I implemented text to speech by using pyttsx3 library which allows for text to be changed into speech from my ocr
  
 
-## Challenges
+### Challenges
 
 - My biggest challenge at BSE was learning how to code and apply software, which set me back from adding the OLED or button to my project. I also faced issues with incompatible libraries, corrupted SD cards, and software compatibility with the Raspberry Pi’s operating system. Despite these setbacks, I completed the base of my project(Optical Character Recognition) and added extra componenets such as STT (speech-to-text) and TTS (text-to-speech) features.
 
-## Learnings from Blue Stamp
+### Learnings from Blue Stamp
 
 - My journey at BSE was filled with valuable learning experiences, especially with Python. I learned how to use Python to control different aspects of my project, from running code on the Raspberry Pi to integrating software features like speech-to-text and text-to-speech. Through trial and error, I developed a stronger understanding of Python’s syntax, libraries, and problem-solving applications, which gave me the confidence to build and expand my project’s functionality.
  
-## What I plan to do after BSE
+### What I plan to do after BSE
 
 - In the future after BSE, I hope to learn more about machine learning and its implementation in the real world and how it can help people. Looking forward, I am eager to deepen my understanding of machine learning by creating and training my own models. I want to explore how these models can be applied to solve problems that humans can't solve on their own and ultimately use them to make a positive difference in society. By learning more about the principles and applications of machine learning, I hope to develop tools and technologies that can help people and contribute to building a better future.
 
@@ -47,13 +47,13 @@ UPDATED OCR
 
 - For my second milestone I started to work on my speech to text recognition. I firstly began by installing vosk which is an offline speech recognition built using machine learning that allows you to convert spoken words into text. I also added additional features which allowed certain keywords to trigger and made it respond to certain words from speech. Lastly, I integrated the OCR with the camera so it was able to recognize text from pictures taken by my camera
 
-## Challenges
+### Challenges
 - A problem I had was that the packages to download vosk became corrupted and the camera was not recognizing text in many images. I was able to fix the corrupted files and replace them. The problem I encountered for the camera wasn't as straight forward since I wasn't able to compeltely change the camera to take higher resolution pictures, I figured out that lighting affected the camera's ability to recognize text and started to use additional lighting while taking photos.
 
-## Surprises
+### Surprises
 - Something that surprised me was how many resources there are online for coding and engineering. Whenever I run into an error, I can usually find someone who had the same issue and solved it. I like how open and helpful the engineering community is. These resources have helped me grow a lot as an engineer, letting me solve problems on my own by researching and putting in the time, without always relying on my mentor or teacher to help.
 
-## Milestone #3 Plans
+### Milestone #3 Plans
 - For my final milestone I would like to implement a button that can take a picture with my camera, an oled screen that displays text, and finally implementing text to speech translation for my OCR
 
 CODE
